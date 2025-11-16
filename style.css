@@ -1,6 +1,6 @@
 /* ========================================
-   Minimalist Academic Website
-   Marco Lorenz, M.A.
+   Minimalist Landing Page
+   Marco Lorenz
    ======================================== */
 
 /* Google Fonts */
@@ -43,23 +43,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-top: 4rem;
+  font-size: 1.75rem;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #e5e5e5;
 }
 
 h3 {
-  font-size: 1.5rem;
-  margin-top: 2.5rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
 p {
@@ -71,21 +79,7 @@ p {
   font-size: 1.125rem;
   font-weight: 400;
   color: #666666;
-  margin-bottom: 3rem;
-}
-
-.meta {
-  font-size: 0.95rem;
-  color: #666666;
-  font-style: italic;
-}
-
-code, pre {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
-  font-size: 0.9rem;
-  background-color: #f5f5f5;
-  padding: 0.2rem 0.4rem;
-  border-radius: 3px;
+  margin-bottom: 0;
 }
 
 /* ========================================
@@ -117,173 +111,259 @@ a:focus-visible {
    ======================================== */
 
 .container {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 0 2rem;
 }
 
-section {
-  margin-bottom: 4rem;
-}
+/* ========================================
+   Landing Page Header
+   ======================================== */
 
-header {
+.landing-header {
+  margin-top: 8rem;
   margin-bottom: 4rem;
-  padding-bottom: 2rem;
+  text-align: center;
+  padding-bottom: 3rem;
   border-bottom: 2px solid #1a1a1a;
 }
 
-footer {
-  margin-top: 6rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e5e5e5;
+/* ========================================
+   Intro Section
+   ======================================== */
+
+.intro {
+  margin: 4rem 0;
   text-align: center;
-  font-size: 0.95rem;
-  color: #666666;
+  font-size: 1.125rem;
+  color: #333333;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro p {
+  margin-bottom: 0;
 }
 
 /* ========================================
-   Sections
+   Main Navigation (Coming Soon)
    ======================================== */
 
-section:nth-of-type(even) {
+.main-nav {
+  margin: 5rem 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
   background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  transition: all 0.2s ease;
+}
+
+.nav-item.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.nav-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.coming-soon {
+  font-size: 0.875rem;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+/* ========================================
+   Contact Section
+   ======================================== */
+
+.contact-section {
+  margin: 5rem 0;
+  padding: 3rem 2rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
   margin-left: -2rem;
   margin-right: -2rem;
-  padding: 3rem 2rem;
-  border-radius: 4px;
 }
 
-/* ========================================
-   Lists
-   ======================================== */
-
-ul {
-  margin-left: 1.5rem;
-  margin-bottom: 1.5rem;
+.contact-section h2 {
+  margin-top: 0;
+  text-align: center;
 }
 
-li {
-  margin-bottom: 0.75rem;
+.contact-info {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-/* ========================================
-   ORCID
-   ======================================== */
+.contact-info p {
+  margin-bottom: 1.25rem;
+}
 
-.orcid {
+.contact-info strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.orcid-link {
   margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e5e5;
 }
 
-.orcid a {
+.orcid-link a {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  font-size: 1rem;
   transition: all 0.2s ease;
 }
 
-.orcid a:hover {
+.orcid-link a:hover {
   background-color: #e5e5e5;
   border-color: #2563eb;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.orcid img {
+.orcid-link img {
   width: 16px;
   height: 16px;
 }
 
 /* ========================================
-   ORCID Link Button
+   Footer
    ======================================== */
 
-.orcid-link {
-  margin: 2rem 0;
+footer {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
 }
 
-.button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.5rem;
-  background-color: #2563eb;
-  color: #ffffff !important;
-  border: none;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  cursor: pointer;
+.footer-nav {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
 }
 
-.button:hover {
-  background-color: #1d4ed8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-  border-bottom: none;
+.footer-nav a {
+  margin: 0 0.5rem;
 }
 
-.button img {
-  filter: brightness(0) invert(1);
-}
-
-/* ========================================
-   Publications
-   ======================================== */
-
-.publication {
-  margin-bottom: 2rem;
-  padding-left: 1rem;
-  border-left: 3px solid #e5e5e5;
-}
-
-.pub-title {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #1a1a1a;
-}
-
-.pub-meta {
+.copyright {
   font-size: 0.95rem;
   color: #666666;
-  margin-bottom: 0.5rem;
+  margin: 0;
 }
 
 /* ========================================
-   Contact Grid
+   Legal Sections (Impressum & Datenschutz)
    ======================================== */
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
+.legal-section {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 4rem 2rem;
 }
 
-.contact-grid strong {
-  font-weight: 600;
+.legal-section:target {
+  display: block;
+}
+
+.legal-section .container {
+  position: relative;
+  max-width: 800px;
+}
+
+.close-link {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  line-height: 1;
+  color: #666666;
+  text-decoration: none;
+  border: none;
+  transition: color 0.2s ease;
+  z-index: 1001;
+}
+
+.close-link:hover {
   color: #1a1a1a;
+  border: none;
+}
+
+.legal-section h2 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.legal-section h3 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  color: #1a1a1a;
+}
+
+.legal-section h4 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #333333;
+}
+
+.legal-section p {
+  line-height: 1.8;
+  color: #333333;
+}
+
+.legal-update {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  color: #666666;
 }
 
 /* ========================================
    Responsive Design
    ======================================== */
-
-@media (min-width: 768px) {
-  .contact-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  section:nth-of-type(even) {
-    margin-left: -4rem;
-    margin-right: -4rem;
-    padding: 3rem 4rem;
-  }
-}
 
 @media (max-width: 768px) {
   html {
@@ -291,7 +371,13 @@ li {
   }
 
   .container {
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .landing-header {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 
   h1 {
@@ -299,31 +385,79 @@ li {
   }
 
   h2 {
-    font-size: 1.75rem;
-    margin-top: 3rem;
+    font-size: 1.5rem;
   }
 
-  h3 {
-    font-size: 1.3rem;
-    margin-top: 2rem;
+  .intro {
+    margin: 3rem 0;
+    font-size: 1rem;
   }
 
-  section:nth-of-type(even) {
+  .main-nav {
+    margin: 4rem 0;
+  }
+
+  .nav-item {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .nav-title {
+    font-size: 1.1rem;
+  }
+
+  .contact-section {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     padding: 2rem 1.5rem;
+  }
+
+  .close-link {
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .legal-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .legal-section h2 {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 1.5rem 1rem;
+    padding: 0 1rem;
   }
 
-  section:nth-of-type(even) {
+  .landing-header {
+    margin-top: 4rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .coming-soon {
+    font-size: 0.75rem;
+  }
+
+  .contact-section {
     margin-left: -1rem;
     margin-right: -1rem;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
   }
 }
 
@@ -361,12 +495,24 @@ li {
     max-width: 100%;
   }
 
+  .legal-section {
+    display: none !important;
+  }
+
+  .legal-section:target {
+    display: none !important;
+  }
+
+  .coming-soon {
+    display: none;
+  }
+
   a {
     color: #1a1a1a;
     text-decoration: underline;
   }
 
-  section:nth-of-type(even) {
+  .contact-section {
     background-color: transparent;
   }
 }
