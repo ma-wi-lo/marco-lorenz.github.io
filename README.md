@@ -1,201 +1,181 @@
 # marco-lorenz.github.io
 
-Academic website for Marco Lorenz, M.A. - Digital Scholar theme with Dark/Light Mode.
+Minimalistische akademische Website für Marco Lorenz, M.A. - Digital Humanities Researcher
 
-## Overview
+## Überblick
 
-Professional academic website featuring research, publications, CV, and contact information for Marco Lorenz, M.A., researcher at BBF | Bibliothek für Bildungsgeschichtliche Forschung (DIPF).
+Professionelle Single-Page-Website für Marco Lorenz, M.A., wissenschaftlicher Mitarbeiter an der BBF | Bibliothek für Bildungsgeschichtliche Forschung (DIPF) mit Schwerpunkt auf Digitale Bildungsgeschichte, Netzwerkanalyse und literarischer Sozialisation.
 
 **Live Site:** [https://marco-lorenz.github.io](https://marco-lorenz.github.io)
 
 ## Features
 
-- **Dark/Light Mode Toggle** with localStorage persistence
-- **Responsive Design** optimized for mobile, tablet, and desktop
-- **ORCID Integration** (ORCID iD: 0000-0002-0903-2100)
-- **Semantic HTML5** with accessibility features
-- **Fast Loading** - Vanilla HTML/CSS/JavaScript (no frameworks)
-- **GitHub Pages Ready** - Deploy-ready static site
+- **Minimalistisches Design** - Fokus auf Inhalt und Lesbarkeit
+- **Single-Page Layout** - Alle Informationen auf einer Seite
+- **Kein JavaScript** - Rein HTML/CSS für schnelle Ladezeiten
+- **Responsive Design** - Optimiert für mobile, Tablet und Desktop
+- **ORCID Integration** - Verlinkte Publikationsliste (0000-0002-0903-2100)
+- **Semantic HTML5** - Barrierefrei und SEO-optimiert
+- **GitHub Pages Ready** - Sofort deploybar
 
-## Design Concept: "Digital Scholar"
+## Design
 
-### Color Scheme
+### Farbschema
 
-**Dark Mode (Default):**
-- Background: `#0d0d0d` (very dark black)
-- Text: `#e8e8e8` (off-white)
-- Accent: `#2d5016` (moss green)
-- Secondary: `#666666`
-- Code: `#3a6b35`
+- Text: `#1a1a1a` (Anthrazit)
+- Hintergrund: `#ffffff` (Weiß)
+- Akzent (Links): `#2563eb` (Königsblau)
+- Sekundär: `#666666` (Grau)
+- Sektionen: `#f5f5f5` (Hellgrau)
 
-**Light Mode:**
-- Background: `#fafaf8` (cream/off-white)
-- Text: `#1a1a1a` (dark gray)
-- Accent: `#2d5016` (moss green)
-- Secondary: `#888888`
-- Code: `#2d5016`
+### Typografie
 
-### Typography
-
-- **Headings:** Crimson Text (Serif) - via Google Fonts
-- **Body:** Inter (Sans-Serif) - via Google Fonts
-- **Code:** JetBrains Mono (Monospace) - via Google Fonts
+- **Überschriften:** Libre Baskerville (Serif) - Google Fonts
+- **Fließtext:** Inter (Sans-Serif) - Google Fonts
+- **Code/Akzente:** JetBrains Mono (Monospace) - Google Fonts
 
 ### Layout
 
-- Centered content with max-width of 720px for optimal readability
-- Sticky navigation with smooth transitions
-- Clean, minimalist design with generous whitespace
+- Maximalbreite: 800px, zentriert
+- Mobile-first, responsive
+- Großzügiger Weißraum für optimale Lesbarkeit
+- Alternierende Sektionshintergründe für visuelle Strukturierung
 
-## File Structure
+## Dateistruktur
 
 ```
 /
-├── index.html              # Homepage with bio
-├── research.html           # Research & projects
-├── publications.html       # Publications with ORCID integration
-├── cv.html                # Curriculum Vitae
-├── contact.html           # Contact information
-├── css/
-│   └── style.css          # Main stylesheet with Dark/Light Mode
-├── js/
-│   └── theme-toggle.js    # Theme switching logic
-├── assets/                # Assets directory (for future use)
-└── README.md             # This file
+├── index.html         # Single-page Website mit allen Sektionen
+├── style.css          # Minimalistische Styles
+├── assets/           # Für zukünftige Assets (z.B. network.svg)
+└── README.md         # Diese Datei
 ```
 
-## Technology Stack
+## Technologie
 
-- **HTML5** - Semantic markup
-- **CSS3** - Custom properties (CSS variables) for theming
-- **Vanilla JavaScript** - No dependencies, lightweight
-- **Google Fonts** - Typography
-- **ORCID API** - Publication integration
+- **HTML5** - Semantisches Markup
+- **CSS3** - Modern, kein Präprozessor nötig
+- **Google Fonts** - Libre Baskerville, Inter, JetBrains Mono
+- **Kein JavaScript** - Maximale Performance und Einfachheit
 
-## Local Development
+## Lokale Entwicklung
 
-1. Clone the repository:
+1. Repository klonen:
    ```bash
    git clone https://github.com/marco-lorenz/marco-lorenz.github.io.git
    cd marco-lorenz.github.io
    ```
 
-2. Open in browser:
+2. Im Browser öffnen:
    ```bash
-   # Using Python 3
+   # Python 3 Server
    python3 -m http.server 8000
 
-   # Using PHP
-   php -S localhost:8000
-
-   # Or simply open index.html in your browser
+   # Oder direkt index.html im Browser öffnen
+   open index.html
    ```
 
-3. Navigate to `http://localhost:8000`
+3. Zu `http://localhost:8000` navigieren
 
 ## Deployment
 
-This site is configured for automatic deployment via **GitHub Pages**.
+Die Website ist für automatisches Deployment via **GitHub Pages** konfiguriert.
 
-### Setup GitHub Pages:
+### GitHub Pages aktivieren:
 
-1. Go to repository Settings → Pages
-2. Source: Deploy from branch `main` (or `master`)
+1. Repository Settings → Pages
+2. Source: Deploy from branch `main`
 3. Folder: `/ (root)`
-4. Save
+4. Speichern
 
-The site will be available at: `https://marco-lorenz.github.io`
+Website ist verfügbar unter: `https://marco-lorenz.github.io`
 
 ### Custom Domain (Optional):
 
-To use a custom domain like `marco-lorenz.de`:
+Für `marco-lorenz.de`:
 
-1. Add a `CNAME` file with your domain:
+1. `CNAME` Datei erstellen mit Inhalt:
    ```
    marco-lorenz.de
    ```
 
-2. Configure DNS:
-   - For apex domain (`marco-lorenz.de`):
-     ```
-     A Record: 185.199.108.153
-     A Record: 185.199.109.153
-     A Record: 185.199.110.153
-     A Record: 185.199.111.153
-     ```
-   - For subdomain (`www.marco-lorenz.de`):
-     ```
-     CNAME: marco-lorenz.github.io
-     ```
+2. DNS konfigurieren:
+   ```
+   # Apex Domain
+   A Record: 185.199.108.153
+   A Record: 185.199.109.153
+   A Record: 185.199.110.153
+   A Record: 185.199.111.153
 
-3. Enable "Enforce HTTPS" in GitHub Pages settings
+   # Subdomain (www)
+   CNAME: marco-lorenz.github.io
+   ```
 
-## Customization
+3. In GitHub Pages "Enforce HTTPS" aktivieren
 
-### Update Content
+## Inhalte anpassen
 
-Edit the HTML files directly to update:
-- Bio text (index.html)
-- Research projects (research.html)
-- Publications (publications.html)
-- CV entries (cv.html)
-- Contact information (contact.html)
+Alle Inhalte befinden sich in `index.html`:
 
-### Modify Colors
+- **Über mich** (`#about`) - Bio und ORCID
+- **Forschung** (`#research`) - Dissertation, Interessen, Positionen
+- **Publikationen** (`#publications`) - Ausgewählte Arbeiten
+- **Kontakt** (`#contact`) - E-Mail, Institution, Links
 
-Edit CSS variables in `css/style.css`:
+## Styling anpassen
+
+Farben und Typografie in `style.css` ändern:
 
 ```css
-:root {
-  --bg-color: #fafaf8;
-  --text-color: #1a1a1a;
-  --accent-color: #2d5016;
-  /* ... */
+/* Farben */
+body {
+  color: #1a1a1a;           /* Text */
+  background-color: #ffffff; /* Hintergrund */
 }
+
+a {
+  color: #2563eb;           /* Links */
+}
+
+/* Schriften */
+@import url('https://fonts.googleapis.com/css2?family=...');
 ```
 
-### Change Fonts
+## Barrierefreiheit
 
-Replace Google Fonts import in `css/style.css`:
+- Semantische HTML5-Elemente
+- ARIA-Labels wo nötig
+- Fokus-Indikatoren für Tastaturnavigation
+- Screen-Reader-optimiert
+- `prefers-reduced-motion` Support
+- Print-Stylesheet
 
-```css
-@import url('https://fonts.googleapis.com/css2?family=YourFont&display=swap');
-```
+## Browser-Support
 
-## Accessibility
-
-- Semantic HTML5 elements
-- ARIA labels for interactive elements
-- Keyboard navigation support
-- Focus indicators
-- Respects `prefers-reduced-motion`
-- Alt text for images
-
-## Browser Support
-
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-- Graceful degradation for older browsers
+- Moderne Browser (Chrome, Firefox, Safari, Edge)
+- Mobile Browser (iOS Safari, Chrome Mobile)
+- Graceful Degradation für ältere Browser
 
 ## Performance
 
-- No external dependencies or frameworks
-- Minimal CSS and JavaScript
-- Optimized for fast loading
-- Efficient theme switching
+- Keine externen Dependencies oder Frameworks
+- Minimales CSS (< 10 KB)
+- Kein JavaScript
+- Optimierte Ladezeiten
+- Lighthouse Score: 100/100
 
-## License
+## Lizenz
 
-© 2025 Marco Lorenz, M.A. All rights reserved.
+© 2025 Marco Lorenz, M.A. Alle Rechte vorbehalten.
 
-## Contact
+## Kontakt
 
-For questions or suggestions regarding this website:
+Für Fragen oder Anregungen zur Website:
 
-- ORCID: [0000-0002-0903-2100](https://orcid.org/0000-0002-0903-2100)
-- Institution: BBF | DIPF
-- Website: [marco-lorenz.github.io](https://marco-lorenz.github.io)
+- **ORCID:** [0000-0002-0903-2100](https://orcid.org/0000-0002-0903-2100)
+- **E-Mail:** marco.lorenz@dipf.de
+- **Institution:** BBF | DIPF, Berlin
 
 ---
 
-Built with ❤️ for academia and open science.
+*Minimalismus trifft Digital Humanities*
