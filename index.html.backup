@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marco Lorenz">
+  <meta name="description" content="Marco Lorenz">
+  <meta name="keywords" content="Marco Lorenz">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Marco Lorenz">
+  <meta property="og:description" content="Marco Lorenz">
+
+  <title>Marco Lorenz</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header class="landing-header">
+      <h1>Marco Lorenz</h1>
+    </header>
+
+
+    <!-- Coming Soon Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <span class="nav-item disabled">
+            <span class="nav-title">Forschung</span>
+            <span class="coming-soon">Demnächst</span>
+          </span>
+        </li>
+        <li>
+          <span class="nav-item disabled">
+            <span class="nav-title">Publikationen</span>
+            <span class="coming-soon">Demnächst</span>
+          </span>
+        </li>
+        <li>
+          <span class="nav-item disabled">
+            <span class="nav-title">Curriculum Vitae</span>
+            <span class="coming-soon">Demnächst</span>
+          </span>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Kontakt</h2>
+      <div class="contact-info">
+        <p>
+          <strong>E-Mail:</strong> <a href="mailto:m.lorenz@dipf.de">m.lorenz@dipf.de</a>
+        </p>
+        <p>
+          <strong>Institution:</strong><br>
+          BBF | Bibliothek für Bildungsgeschichtliche Forschung<br>
+          DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation<br>
+          Berlin
+        </p>
+        <p class="orcid-link">
+          <a href="https://orcid.org/0000-0002-0903-2100" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile">
+            <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD" width="16" height="16">
+            ORCID: 0000-0002-0903-2100
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer with Legal Links -->
+    <footer>
+      <nav class="footer-nav">
+        <a href="#impressum">Impressum</a> ·
+        <a href="#datenschutz">Datenschutz</a>
+      </nav>
+      <p class="copyright">&copy; 2025 Marco Lorenz</p>
+    </footer>
+  </main>
+
+  <!-- Impressum Section (Hidden by default, can be shown via anchor) -->
+  <aside id="impressum" class="legal-section">
+    <div class="container">
+      <a href="#" class="close-link" aria-label="Schließen">&times;</a>
+      <h2>Impressum</h2>
+
+      <p>
+        <strong>Marco Lorenz</strong><br>
+        BBF | Bibliothek für Bildungsgeschichtliche Forschung<br>
+        DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation<br>
+        Warschauer Straße 34-38<br>
+        10243 Berlin
+      </p>
+
+      <p>
+        E-Mail: <a href="mailto:m.lorenz@dipf.de">m.lorenz@dipf.de</a>
+      </p>
+    </div>
+  </aside>
+
+  <!-- Datenschutz Section -->
+  <aside id="datenschutz" class="legal-section">
+    <div class="container">
+      <a href="#" class="close-link" aria-label="Schließen">&times;</a>
+      <h2>Datenschutz</h2>
+
+      <p>
+        Diese Website erfasst keine personenbezogenen Daten. Es werden keine Cookies gesetzt und keine Analysetools verwendet.
+      </p>
+
+      <p>
+        Die Website wird auf GitHub Pages gehostet. Weitere Informationen: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>
+      </p>
+    </div>
+  </aside>
+</body>
+</html>
